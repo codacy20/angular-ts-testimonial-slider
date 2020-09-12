@@ -3,5 +3,7 @@ export interface Testinmony {
   url: string;
   name: string;
   job: string;
-  quote: string;
+  job_field: string;
+  paragraph: string;
+  createdAt: Date;
 }
