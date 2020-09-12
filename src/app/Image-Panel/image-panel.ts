@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input, SimpleChange } from "@angular/core";
+import { Testinmony } from "../Models/Testimony";
 
 @Component({
   selector: "app-image-panel",
@@ -7,4 +8,9 @@ import { Component } from "@angular/core";
 })
 export class AppImagePanel {
   title = "CodeSandbox";
+  @Input() current: Testinmony;
+
+  ngOnChanges(changes: { [propertyName: string]: SimpleChange }) {
+    console.log("changes panel", changes);
+  }
 }

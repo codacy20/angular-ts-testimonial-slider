@@ -1,5 +1,15 @@
 <div>
   this is card
-  <app-image-panel></app-image-panel>
-  <app-testimony></app-testimony>
+  <div class="icons" (click)="switch(0)">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
+  <app-image-panel [current]="current"></app-image-panel>
+  <app-testimony [current]="current"></app-testimony>
+  <div class="icons" (click)="switch(1)">
+    <span class="material-icons">
+      keyboard_arrow_right
+    </span>
+  </div>
 </div>
