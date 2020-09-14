@@ -7,8 +7,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .material-icons{
+  position: relative;
+  .icons{
     background-color: #007bfc;
     cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: all 200ms ease;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+    }
+  }
+  #right{
+    right: -24px;
+  }
+  #right:hover{
+    transform: translate(2px, 0px);
+  }
+  #left{
+    left: -24px;
+  }
+  #left:hover{
+    transform: translate(-2px, 0px);
   }
 }
