@@ -6,4 +6,6 @@ export interface Testinmony {
   job_field: string;
   paragraph: string;
   createdAt: Date;
+  company: string;
+  avatar: string;
 }

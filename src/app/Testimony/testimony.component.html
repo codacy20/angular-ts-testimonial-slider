@@ -1,3 +1,15 @@
-<div>
-  this is testimony
+<div *ngIf="current">
+  {{this.current.company}}
+  <p>
+    leverages social media to collect testimonials from its customers. It
+    encourages customers to post themselves on their Instagram pages wearing
+    Flabletics products and tagging "#MyFabletics." This provides a surge of
+    engagement for the brand’s social account and creates free advertisement in
+    the form of customer advocacy.
+  </p>
+  <div>
+    <img src="{{current.avatar}}" alt="avatar" />
+    <span>{{current.name}}</span>
+    <span>{{current.job}}, {{current.company}}</span>
+  </div>
 </div>

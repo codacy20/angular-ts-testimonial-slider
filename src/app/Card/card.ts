@@ -23,7 +23,7 @@ export class AppCard {
       this.current = this.data[this.currentIndex - 1];
       this.currentIndex--;
     }
-    if (input === 1 && this.currentIndex < this.data.length) {
+    if (input === 1 && this.currentIndex < this.data.length - 1) {
       this.current = this.data[this.currentIndex + 1];
       this.currentIndex++;
     }
