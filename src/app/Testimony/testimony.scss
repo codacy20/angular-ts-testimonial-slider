@@ -1,0 +1,32 @@
+.testimony-container{
+  padding: 20px 75px;
+  p{
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: capitalize;
+  }
+  .profile{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 50px;
+      margin-right: 14px;
+      border-radius: 100px;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.15);
+      border: 5px solid white;
+    }
+    .info{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      #auth{
+        font-size: 16px;
+      }
+      #job{
+        color: rgba(21, 28, 52, 0.5);
+        font-size: 14px;
+      }
+    }
+  }
+
+}
